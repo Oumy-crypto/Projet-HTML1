@@ -1,0 +1,8 @@
+/*Barre de navigation*/
+
+nav, ul, li{ 
+  display: inline;
+  margin: 20px;
+}
+nav, ul, li, a{
+    text-decoration: none;
