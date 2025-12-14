@@ -1,0 +1,133 @@
+/*Barre de navigation*/
+
+nav, ul, li{ 
+  display: inline;
+  margin: 20px;
+  color: #ffffff
+}
+nav, ul, li, a{
+    text-decoration: none;
+    color: #ffffff
+}
+
+nav{display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+.barredenav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 40px;
+    background-color: #a03c7e;
+    border-bottom: 1px black
+}
+/*menu*/
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 0)
+}
+
+.menu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease
+}
+/*survol*/
+.menu:hover::after,
+.menu:active::after{
+    width: 100%;
+}
+
+
+/*changement de la police de caractère*/
+@import url(Roboto.htm);
+
+body{
+    font-family:'roboto', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.lien{
+    color: #a03c7e;
+}
+/*ajout de l'attribut class*/
+.titre{color: #a03c7e;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*Pied de Page*/
+.footer {
+    background-color: #a03c7e;
+    color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/*Formulaire de Contact*/
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #a03c7e;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/*Sections Générales*/
+.section{
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section{
+    color: #000;;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+/*tableau*/
+.tableau{
+    background-color: #a03c7e;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    padding: auto;
+}
